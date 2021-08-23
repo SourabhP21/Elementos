@@ -1,0 +1,260 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Jul, 2020, 5:02:57 PM
+    Author     : HP
+*/
+
+/*body{
+		margin:0px;
+		padding:0px;
+
+	}
+
+	.layer {
+		background-color: rgba(191, 191, 191, 0.6);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 550px;
+		}
+	#header{
+			font-family:geneva;
+			height:106px;
+			width:100%;	
+			background-color:white;	
+			position:absolute;
+			top:0px;
+		}
+	
+	#tableheader{
+			
+			padding:16px;
+			text-align:left;
+			width:100%;
+			margin-top:20px;
+			line-height:0.75cm;
+			border-collapse:collapse;
+			font-size:20px;	
+		}
+	#tableheader th{
+		font-size:60px;
+		}
+	
+	.hbutton{ 
+			outline:none;
+			background-color:#00CCFF;
+			color:white;
+			padding:15px 15px;
+			text-align:center;
+			font-size:15px;
+			border:2px solid #00CCFF;
+			cursor:pointer;
+		}
+	.hbutton:hover{
+			background-color:white;
+			color:#00CCFF;
+			border:2px solid #00CCFF;
+		}
+	#menu{
+		width:100%;
+		height:50px;
+		position:absolute;
+		top:106px;
+		}
+	ul{
+		display:flex;
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		background-color:#000;
+		}
+	li{
+		float:left;
+		//border-right:1px solid #bbb;
+		}
+	li a{
+		display:block;
+		color:white;
+		text-align:center;
+		padding:14px 36px;
+		text-decoration:none;
+		}
+	
+	li a:hover:not(.active){
+		background-color:#808080;
+		}
+	.active{
+		background-color:#00ccff;
+		color:black;
+		}
+	#link{
+		width:20%;
+		//border:2px solid black;
+		position:absolute;
+		top:300px;
+		left:45%;
+		font-size:15px;
+		text-decoration:none;
+		cursor:pointer;
+		color:white;
+	//	font-family: "Lucida Console", Courier, monospace;
+	//	font-family: Arial, Helvetica, sans-serif;
+	}	
+	#link h3{
+		position:absolute;
+		top:-70px;
+		left:-10px;
+		font-size:40px;
+		text-decoration:underline;
+		line-height:1cm;
+		letter-spacing:2px;
+	}
+	#link a{
+		color:white;
+		text-decoration:none;
+	}
+	#link a:hover{
+		color:black;
+	}*/
+	
+/*#aboutus-container{
+	width:50%;
+	height:450px;
+	position:center;
+	top:500px;
+	//border:2px solid black;
+	display:flex;
+	background-color:white;
+}	
+#aboutus-text{
+	margin:75px;
+	//border:2px solid black;
+	width:40%;
+	height:300px;
+	position:absolute;
+	left:0px;
+	float:left;
+}
+#aboutus-image{
+	margin:75px;
+	//border:2px solid black;
+	width:40%;
+	height:300px;
+	position:absolute;
+	left:48%;
+		
+}
+.aboutus-layer{
+	background-color: rgba(191, 191, 191, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	}*/
+	
+	/*#team-label{
+		width:80%;
+		height:100px;
+		position:absolute;
+		top:1000px;
+		left:130px;
+		text-align:center;
+		font-family: "Lucida Console", Courier, monospace;
+		font-size:55px;
+		background-color:black;
+		color:white;
+		padding-top:40px;
+	}*/
+	#team-container1{
+		display:flex;
+		width:80%;
+		position:absolute;
+		top:1150px;
+		left:130px;
+	 	border:1px solid white;
+	}
+	
+	.team{
+		margin:10px;
+		width:25%;
+		height:400px;
+		background-color:white;
+		//border:1px solid black;
+		//border-radius:30px;
+		font-family:cursive;
+		font-size:25px;
+		//text-decoration:underline;
+		color:black;
+		
+	}
+	.team img:hover{
+		transform: scale(1.05);
+	}
+	
+	.team-button{
+		//border:1px solid black;
+		margin-left:55px;
+		word-spacing:20px;
+		position:absolute;
+	}
+	.team-button:hover{
+		box-shadow:none;
+		transform:none;
+	}
+
+	
+	/*#mission-container{
+		width:100%;
+		height:450px;
+		position:absolute;
+		top:1600px;
+	//	border:2px solid black;
+		display:flex;
+		background-color:white;
+	}	
+	#mission-image{
+		margin:75px;
+	//	border:2px solid black;
+		width:40%;
+		height:300px;
+		position:absolute;
+		left:0%;
+		
+	}
+	#mission-text{
+		margin:75px;
+	//	border:2px solid black;
+		width:40%;
+		height:300px;
+		position:absolute;
+		left:48%;
+		float:left;
+	}
+
+	#footer{
+		width:100%;
+		height:60px;
+		padding-top:20px;
+		position:relative;
+		top:1500px;
+		text-align:center;
+		font-family: "Lucida Console", Courier, monospace;
+		font-size:15px;
+		background-color:#000;
+		color:white;		
+	}
+	
+	h2{
+	//	font-family: "Lucida Console", Courier, monospace;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	h5{
+	//	font-family: "Lucida Console", Courier, monospace;
+		font-family: Arial, Helvetica, sans-serif;
+	}*/

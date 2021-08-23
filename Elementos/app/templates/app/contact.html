@@ -1,0 +1,95 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2 style="color:azure">{{ title }}</h2>
+<h3 style="color:azure">{{ message }}</h3>
+
+<address style="color:azure">
+    Oriental Institute of Science & Technology<br />
+    Bhopal,MP<br />
+</address>
+
+{% load static %}
+<div style="color:azure">
+
+    <div id="team-label">
+        Our Team
+    </div>
+    <br>
+    
+    <div id="team-container1" style="border:1px solid white">
+        <div class="team" style="margin:2%; margin-left:38px; display:inline-block; width:28%">
+            <img src="{% static 'app/img/male-member.png' %}" width="100%" height="300px">
+            <br>
+            Saurabh
+            <br>
+            <div class="team-button" style="padding-top:5px">
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384172.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384171.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384174.svg" width="25" height="25"></a>
+            </div>
+        </div>
+        <div class="team" style="margin:2%; display:inline-block; width:28%">
+            <img src="{% static 'app/img/male-member.png' %}" width="100%" height="300px">
+            <br>
+            Rohan
+            <br>
+            <div class="team-button" style="padding-top:5px">
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384172.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384171.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384174.svg" width="25" height="25"></a>
+            </div>
+        </div>
+        <div class="team" style="margin:2%; display:inline-block; width:28%">
+            <img src="{% static 'app/img/male-member.png' %}" width="100%" height="300px">
+            <br>
+            Yuvraj
+            <br>
+            <div class="team-button" style="padding-top:5px">
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384172.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384171.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384174.svg" width="25" height="25"></a>
+            </div>
+        </div>
+        <div class="team" style="margin:2%; margin-left:38px; display:inline-block; width:28%">
+            <img src="{% static 'app/img/male-member.png' %}" width="100%" height="300px">
+            <br>
+            Sourabh
+            <br>
+            <div class="team-button" style="padding-top:5px">
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384172.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384171.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384174.svg" width="25" height="25"></a>
+            </div>
+        </div>
+        <div class="team" style="margin:2%; display:inline-block; width:28%">
+            <img src="{% static 'app/img/female-member.jpg' %}" width="100%" height="300px">
+            <br>
+            Palak
+            <br>
+            <div class="team-button" style="padding-top:5px">
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384172.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384171.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384174.svg" width="25" height="25"></a>
+            </div>
+        </div>
+        <div class="team" style="margin:2%; display:inline-block; width:28%">
+            <img src="{% static 'app/img/female-member.jpg' %}" width="100%" height="300px">
+            <br>
+            Srashti
+            <br>
+            <div class="team-button" style="padding-top:5px">
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384172.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384171.svg" width="25" height="25"></a>
+                <a href=""><img src="https://image.flaticon.com/icons/svg/1384/1384174.svg" width="25" height="25"></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<address style="margin:3%; color:azure">
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">sc06032000@gmail.com</a><br />
+</address>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+.stpg{
+    font-family: 'Aardvark Cafe';
+    color: #ffffff
+}
+
+.lead{
+    color: #ffffff
+}
+
+a.navbar-brand{
+    font-family:'Aardvark Cafe';
+    font-size:35px
+}
+
+ul.nav.navbar-nav{
+    font-family:'Evil Dead'
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+span#final.text-light, 
+p#status.lead.mt-3.text-light,
+h4.mt-4.text-light{
+    color:azure
+}
+
+#game1, #game2, #game3, #game4{
+    border-style: groove;
+    margin: 25px;
+    height: 200px;
+    width: 500px;
+    transition: width 0.5s;
+}
+
+    #game1:hover, #game2:hover, #game3:hover, #game4:hover{
+        height: 240px;
+        width: 530px;
+    }
+
+button#start.btn.btn-success{
+    background-color:transparent;
+    border-width:4px;
+}
+
+div#cont:hover{
+    border:ridge 2px white;
+}

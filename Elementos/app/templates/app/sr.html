@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+{% extends "app/layout.html" %}
+{% block content %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+    </style>
+    <title>Speech To Text</title>
+</head>
+
+
+
+<body class="container pt-5 bg-dark">
+    <div>
+        <div style="text-align:center; color:azure; margin-bottom:30px; border: 1px ridge gray; border-radius:5px">
+            <h2>ELEMENTOS</h2>
+            <h4>VIRTUAL LEARNING ASSISTANT</h4>
+        </div>
+
+        <div style="color:azure; margin-bottom:30px">
+            Welcome to Elementos Interactive!<br />
+            I'm Elementos, your Virtual Learning Assistant<br />
+            Ask Me Anything you want to know about the periodic Table or Take the SmartQuiz!<br />
+        </div>
+        <div style="border-radius:5px; background-color:antiquewhite; margin-bottom:20px">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Tip</strong>: !! A Sample Query: What is the atomic number of *element*</div>
+    </div>
+    <h4 class="mt-4 text-light">Transcript</h4>
+
+    <div class="p-3" style="border: 1px solid gray; height: 100px; border-radius: 8px; margin: 20px 0 10px 0">
+        <span id="final" class="text-light"></span>
+        <span id="interim" class="text-secondary"></span>
+    </div>
+
+    <div class="mt-4">
+        <button class="btn btn-success" id="start" style="height:50px; width:60px; border-radius:100%; ">Start</button>
+        <p id="status" class="lead mt-3 text-light" style="display: none">Listenting ...</p>
+    </div>
+
+    <div style="color:azure; border:1px ridge gray; padding:5px; margin-top: 20px">
+        <div id="sq-head" style="margin-top:20px">
+            <h4>SmartQuiz!</h4><br />
+            <div>
+                Take The Challenge and attempt the smart quiz, The System will ask you Questions and based on your answers you'll get a Score.<br />
+                Try to get the Best Score possible.<br />
+            </div>
+        </div>
+        <div id="sqscore" style="margin:3%; border:2px double red; width:70px">SCORE:<div id="score">0</div></div>
+
+        <div>
+            <h5>Question:</h5>
+        </div>
+        <div id="sq-ques" style="border:1px gray solid; border-radius:8px; height:50px; width:100%;">
+
+        </div>
+        <div>
+            <h5>
+                Answer:
+            </h5>
+        </div>
+        <div id="sq-ans" style="border:1px gray solid; border-radius:8px; height:50px; width:100%;">
+
+        </div>
+        <div id="sqbutton box" style=" margin-top:10px; margin-bottom: 60px">
+            <button id="sqstrt">START</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="sqans" style="display:none">ANSWER</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="sqst">STOP</button>
+            &nbsp;
+            <button id="sqnext" style="display:none">NEXT</button>
+        </div>
+    </div>
+</body>
+
+{% load static %}
+
+<script src="{% static 'app/scripts/speechRec.js' %}"></script>
+<script src="{% static 'app/scripts/smartyy.js' %}"></script>
+{% endblock %}
+
+</html>

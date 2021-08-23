@@ -1,0 +1,13 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/content/custom.css' %}"/>
+<div class="games-container">
+
+    <a href="{% url 'sym' %} "><div id="game3">SYMBOL</div></a>
+    <a href="{% url 'guess' %}"><div id="game1">GUESS THE ELEMENTS</div></a>
+    <a href="{% url 'elementos2048' %}"><div id="game2">ELEMENTOS 2048</div></a>
+    <a href="{% url 'match' %} "><div id="game3">MEMORY MASTER</div></a>
+</div>
+{% endblock %}

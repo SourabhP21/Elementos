@@ -1,0 +1,22 @@
+h2{
+	color:azure
+}
+
+canvas{
+	position: absolute;
+	left:12%;
+	top:130px;
+	margin: auto;
+	border-radius: 5px;
+	box-shadow:3px 2px 15px 2px #221e1e;
+	border: 2px ridge #fff;
+}
+
+#canv-cnt{
+	width:950px;
+	height:700px;
+}
+
+footer{
+	position:page;
+}

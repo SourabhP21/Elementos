@@ -1,0 +1,279 @@
+<!Doctype HTML>
+{% extends 'app/layout.html' %}
+{% block content %}
+
+{% load static %}
+
+<html>
+
+<head>
+    <title>Element</title>
+    <style>
+        g {
+            color: #69a1d2;
+        }
+        circle.nucleus{
+            fill:#ffffff;
+        }
+        #ehist{
+            color:azure;
+        }
+        #ehct {
+            line-height:15px;
+            color: azure;
+        }
+        #det_container{
+            margin:auto;
+            margin-bottom:60px;
+        }
+        #hdr {
+            padding: 5px;
+            margin: 4px;
+            border: 5px ridge rgb(70,73,90);
+        }
+        .one{
+            animation: rotate 10s infinite linear;
+        }
+        .two {
+            animation: rotate 10s infinite linear;
+        }
+        .three {
+            animation: rotate 10s infinite linear;
+        }
+        .four {
+            animation: rotate 10s infinite linear;
+        }
+        .five {
+            animation: rotate 10s infinite linear;
+        }
+        .six {
+            animation: rotate 10s infinite linear;
+        }
+        .seven {
+            animation: rotate 10s infinite linear;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h4 id="det_container">
+        <div id="hdr">
+            <div id="enx" style="font-size:35px; text-align: center; color: azure; margin:5%"></div>
+        </div>
+        <div id="ele_st" style="width:45%; border:0.5px solid rgb(70,73,90); float:left">
+            <svg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='-800 -800 1600 1600' class='atom pt-6'>
+                <g class='g'>
+                    <circle id="ec11" class='nucleus' r='130' />
+                    <text class='font-fam' id='elname' x='0' y='0' fill='#000000' alignment-baseline='middle' dominant-baseline='middle' text-anchor='middle'></text>
+                    <g class='one' fill='currentColor'>
+                        <circle r=230 fill='none' stroke='currentColor' stroke-width=8 />
+                        <circle id="ec11" class='electron' cx=0 cy=-230 r=25 />
+                        <circle id="ec12" class='electron' style="visibility:hidden;" cx=0 cy=230 r=25 />
+                    </g>
+                    <g id="two" style="visibility:hidden;" class='two' fill='currentColor'>
+                        <circle r=320 fill='none' stroke='currentColor' stroke-width=8 />
+                        <circle id="ec21" class='electron' style="visibility:hidden;" cx=0 cy=-320 r=25 />
+                        <circle id="ec22" class='electron' style="visibility:hidden;" cx=0 cy=320 r=25 />
+                        <circle id="ec23" class='electron' style="visibility:hidden;" cx=-320 cy=0 r=25 />
+                        <circle id="ec24" class='electron' style="visibility:hidden;" cx=320 cy=0 r=25 />
+                        <circle id="ec25" class='electron' style="visibility:hidden;" cx=-226.272 cy=-226.272 r=25 />
+                        <circle id="ec26" class='electron' style="visibility:hidden;" cx=226.272 cy=-226.272 r=25 />
+                        <circle id="ec27" class='electron' style="visibility:hidden;" cx=-226.272 cy=226.272 r=25 />
+                        <circle id="ec28" class='electron' style="visibility:hidden;" cx=226.272 cy=226.272 r=25 />
+                    </g>
+                    <g id='three' style="visibility:hidden;" class='three' fill='currentColor'>
+                        <circle r=410 fill='none' stroke='currentColor' stroke-width=8 />
+                        <circle id="ec31" class='electron' style="visibility:hidden;" cx=0 cy=-410 r=25 />
+                        <circle id="ec32" class='electron' style="visibility:hidden;" cx=0 cy=410 r=25 />
+                        <circle id="ec33" class='electron' style="visibility:hidden;" cx=-403.77117873000003 cy=-71.19575298 r=25 />
+                        <circle id="ec34" class='electron' style="visibility:hidden;" cx=403.77117873000003 cy=-71.19575298 r=25 />
+                        <circle id="ec35" class='electron' style="visibility:hidden;" cx=-355.07041399999997 cy=205 r=25 />
+                        <circle id="ec36" class='electron' style="visibility:hidden;" cx=355.07041399999997 cy=205 r=25 />
+                        <circle id="ec37" class='electron' style="visibility:hidden;" cx=-263.542916 cy=-314.07822163 r=25 />
+                        <circle id="ec38" class='electron' style="visibility:hidden;" cx=263.542916 cy=-314.07822163 r=25 />
+                        <circle id="ec39" class='electron' style="visibility:hidden;" cx=-263.542916 cy=314.07822163 r=25 />
+                        <circle id="ec310" class='electron' style="visibility:hidden;" cx=263.542916 cy=314.07822163 r=25 />
+                        <circle id="ec311" class='electron' style="visibility:hidden;" cx=-355.07041399999997 cy=-205 r=25 />
+                        <circle id="ec312" class='electron' style="visibility:hidden;" cx=355.07041399999997 cy=-205 r=25 />
+                        <circle id="ec313" class='electron' style="visibility:hidden;" cx=-403.77117873000003 cy=71.19575298 r=25 />
+                        <circle id="ec314" class='electron' style="visibility:hidden;" cx=403.77117873000003 cy=71.19575298 r=25 />
+                        <circle id="ec315" class='electron' style="visibility:hidden;" cx=-140.2282 cy=-385.2739742 r=25 />
+                        <circle id="ec316" class='electron' style="visibility:hidden;" cx=140.2282 cy=-385.2739742 r=25 />
+                        <circle id="ec317" class='electron' style="visibility:hidden;" cx=-140.2282 cy=385.2739742 r=25 />
+                        <circle id="ec318" class='electron' style="visibility:hidden;" cx=140.2282 cy=385.2739742 r=25 />
+                    </g>
+                    <g id="four" style="visibility:hidden;" class='four' fill='currentColor'>
+                        <circle r=500 fill='none' stroke='currentColor' stroke-width=8 />
+                        <circle id="ec41" class='electron' style="visibility:hidden;" cx=0 cy=-500 r=25 />
+                        <circle id="ec42" class='electron' style="visibility:hidden;" cx=0 cy=500 r=25 />
+                        <circle id="ec43" class='electron' style="visibility:hidden;" cx=-500 cy=0 r=25 />
+                        <circle id="ec44" class='electron' style="visibility:hidden;" cx=500 cy=0 r=25 />
+                        <circle id="ec45" class='electron' style="visibility:hidden;" cx=-353.54999999999995 cy=-353.54999999999995 r=25 />
+                        <circle id="ec46" class='electron' style="visibility:hidden;" cx=353.54999999999995 cy=-353.54999999999995 r=25 />
+                        <circle id="ec47" class='electron' style="visibility:hidden;" cx=-353.54999999999995 cy=353.54999999999995 r=25 />
+                        <circle id="ec48" class='electron' style="visibility:hidden;" cx=353.54999999999995 cy=353.54999999999995 r=25 />
+                        <circle id="ec49" class='electron' style="visibility:hidden;" cx=-461.93976625564335 cy=-191.3417161825449 r=25 />
+                        <circle id="ec410" class='electron' style="visibility:hidden;" cx=461.93976625564335 cy=-191.3417161825449 r=25 />
+                        <circle id="ec411" class='electron' style="visibility:hidden;" cx=461.93976625564335 cy=191.3417161825449 r=25 />
+                        <circle id="ec412" class='electron' style="visibility:hidden;" cx=-461.93976625564335 cy=191.3417161825449 r=25 />
+                        <circle id="ec413" class='electron' style="visibility:hidden;" cx=-191.3417161825449 cy=-461.93976625564335 r=25 />
+                        <circle id="ec414" class='electron' style="visibility:hidden;" cx=191.3417161825449 cy=-461.93976625564335 r=25 />
+                        <circle id="ec415" class='electron' style="visibility:hidden;" cx=-191.3417161825449 cy=461.93976625564335 r=25 />
+                        <circle id="ec416" class='electron' style="visibility:hidden;" cx=191.3417161825449 cy=461.93976625564335 r=25 />
+                        <circle id="ec417" class='electron' style="visibility:hidden;" cx=-490.3926402016152 cy=-97.54516100806414 r=25 />
+                        <circle id="ec418" class='electron' style="visibility:hidden;" cx=490.3926402016152 cy=-97.54516100806414 r=25 />
+                        <circle id="ec419" class='electron' style="visibility:hidden;" cx=-97.54516100806414 cy=490.3926402016152 r=25 />
+                        <circle id="ec420" class='electron' style="visibility:hidden;" cx=415.7348061512726 cy=277.78511650980107 r=25 />
+                        <circle id="ec421" class='electron' style="visibility:hidden;" cx=-97.54516100806414 cy=-490.3926402016152 r=25 />
+                        <circle id="ec422" class='electron' style="visibility:hidden;" cx=277.78511650980107 cy=-415.7348061512726 r=25 />
+                        <circle id="ec423" class='electron' style="visibility:hidden;" cx=-415.7348061512726 cy=277.78511650980107 r=25 />
+                        <circle id="ec424" class='electron' style="visibility:hidden;" cx=-277.78511650980107 cy=-415.7348061512726 r=25 />
+                        <circle id="ec425" class='electron' style="visibility:hidden;" cx=97.54516100806414 cy=490.3926402016152 r=25 />
+                        <circle id="ec426" class='electron' style="visibility:hidden;" cx=-490.3926402016152 cy=97.54516100806414 r=25 />
+                        <circle id="ec427" class='electron' style="visibility:hidden;" cx=490.3926402016152 cy=97.54516100806414 r=25 />
+                        <circle id="ec428" class='electron' style="visibility:hidden;" cx=97.54516100806414 cy=-490.3926402016152 r=25 />
+                        <circle id="ec429" class='electron' style="visibility:hidden;" cx=-415.7348061512726 cy=-277.78511650980107 r=25 />
+                        <circle id="ec430" class='electron' style="visibility:hidden;" cx=277.78511650980107 cy=415.7348061512726 r=25 />
+                        <circle id="ec431" class='electron' style="visibility:hidden;" cx=415.7348061512726 cy=-277.78511650980107 r=25 />
+                        <circle id="ec432" class='electron' style="visibility:hidden;" cx=-277.78511650980107 cy=415.7348061512726 r=25 />
+                    </g>
+                    <g id="five" style="visibility:hidden;" class='five' fill='currentColor'>
+                        <circle r=590 fill='none' stroke='currentColor' stroke-width=8 />
+                        <circle id="ec51" class='electron' style="visibility:hidden;" cx=0 cy=-590 r=25 />
+                        <circle id="ec52" class='electron' style="visibility:hidden;" cx=0 cy=590 r=25 />
+                        <circle id="ec53" class='electron' style="visibility:hidden;" cx=-590 cy=0 r=25 />
+                        <circle id="ec54" class='electron' style="visibility:hidden;" cx=590 cy=0 r=25 />
+                        <circle id="ec55" class='electron' style="visibility:hidden;" cx=-417.18899999999996 cy=-417.18899999999996 r=25 />
+                        <circle id="ec56" class='electron' style="visibility:hidden;" cx=417.18899999999996 cy=-417.18899999999996 r=25 />
+                        <circle id="ec57" class='electron' style="visibility:hidden;" cx=-417.18899999999996 cy=417.18899999999996 r=25 />
+                        <circle id="ec58" class='electron' style="visibility:hidden;" cx=417.18899999999996 cy=417.18899999999996 r=25 />
+                        <circle id="ec59" class='electron' style="visibility:hidden;" cx=-545.0889241816592 cy=-225.78322509540297 r=25 />
+                        <circle id="ec510" class='electron' style="visibility:hidden;" cx=545.0889241816592 cy=-225.78322509540297 r=25 />
+                        <circle id="ec511" class='electron' style="visibility:hidden;" cx=545.0889241816592 cy=225.78322509540297 r=25 />
+                        <circle id="ec512" class='electron' style="visibility:hidden;" cx=-545.0889241816592 cy=225.78322509540297 r=25 />
+                        <circle id="ec513" class='electron' style="visibility:hidden;" cx=-225.78322509540297 cy=-545.0889241816592 r=25 />
+                        <circle id="ec514" class='electron' style="visibility:hidden;" cx=225.78322509540297 cy=-545.0889241816592 r=25 />
+                        <circle id="ec515" class='electron' style="visibility:hidden;" cx=-225.78322509540297 cy=545.0889241816592 r=25 />
+                        <circle id="ec516" class='electron' style="visibility:hidden;" cx=225.78322509540297 cy=545.0889241816592 r=25 />
+                        <circle id="ec517" class='electron' style="visibility:hidden;" cx=-578.6633154379059 cy=-115.10328998951569 r=25 />
+                        <circle id="ec518" class='electron' style="visibility:hidden;" cx=578.6633154379059 cy=-115.10328998951569 r=25 />
+                        <circle id="ec519" class='electron' style="visibility:hidden;" cx=-115.10328998951569 cy=578.6633154379059 r=25 />
+                        <circle id="ec520" class='electron' style="visibility:hidden;" cx=490.5670712585017 cy=327.78643748156526 r=25 />
+                        <circle id="ec521" class='electron' style="visibility:hidden;" cx=-115.10328998951569 cy=-578.6633154379059 r=25 />
+                        <circle id="ec522" class='electron' style="visibility:hidden;" cx=327.78643748156526 cy=-490.5670712585017 r=25 />
+                        <circle id="ec523" class='electron' style="visibility:hidden;" cx=-490.5670712585017 cy=327.78643748156526 r=25 />
+                        <circle id="ec524" class='electron' style="visibility:hidden;" cx=-327.78643748156526 cy=-490.5670712585017 r=25 />
+                        <circle id="ec525" class='electron' style="visibility:hidden;" cx=115.10328998951569 cy=578.6633154379059 r=25 />
+                        <circle id="ec526" class='electron' style="visibility:hidden;" cx=-578.6633154379059 cy=115.10328998951569 r=25 />
+                        <circle id="ec527" class='electron' style="visibility:hidden;" cx=578.6633154379059 cy=115.10328998951569 r=25 />
+                        <circle id="ec528" class='electron' style="visibility:hidden;" cx=115.10328998951569 cy=-578.6633154379059 r=25 />
+                        <circle id="ec529" class='electron' style="visibility:hidden;" cx=-490.5670712585017 cy=-327.78643748156526 r=25 />
+                        <circle id="ec530" class='electron' style="visibility:hidden;" cx=327.78643748156526 cy=490.5670712585017 r=25 />
+                        <circle id="ec531" class='electron' style="visibility:hidden;" cx=490.5670712585017 cy=-327.78643748156526 r=25 />
+                        <circle id="ec532" class='electron' style="visibility:hidden;" cx=-327.78643748156526 cy=490.5670712585017 r=25 />
+                    </g>
+                    <g id="six" style="visibility:hidden;" class='six' fill='currentColor'>
+                        <circle r=680 fill='none' stroke='currentColor' stroke-width=8 />
+                        <circle id="ec61" class='electron' style="visibility:hidden;" cx=0 cy=-680 r=25 />
+                        <circle id="ec62" class='electron' style="visibility:hidden;" cx=0 cy=680 r=25 />
+                        <circle id="ec63" class='electron' style="visibility:hidden;" cx=-669.66927204 cy=-118.08076103999998 r=25 />
+                        <circle id="ec64" class='electron' style="visibility:hidden;" cx=669.66927204 cy=-118.08076103999998 r=25 />
+                        <circle id="ec65" class='electron' style="visibility:hidden;" cx=-588.8972719999999 cy=340 r=25 />
+                        <circle id="ec66" class='electron' style="visibility:hidden;" cx=588.8972719999999 cy=340 r=25 />
+                        <circle id="ec67" class='electron' style="visibility:hidden;" cx=-437.095568 cy=-520.9102212399999 r=25 />
+                        <circle id="ec68" class='electron' style="visibility:hidden;" cx=437.095568 cy=-520.9102212399999 r=25 />
+                        <circle id="ec69" class='electron' style="visibility:hidden;" cx=-437.095568 cy=520.9102212399999 r=25 />
+                        <circle id="ec610" class='electron' style="visibility:hidden;" cx=437.095568 cy=520.9102212399999 r=25 />
+                        <circle id="ec611" class='electron' style="visibility:hidden;" cx=-588.8972719999999 cy=-340 r=25 />
+                        <circle id="ec612" class='electron' style="visibility:hidden;" cx=588.8972719999999 cy=-340 r=25 />
+                        <circle id="ec613" class='electron' style="visibility:hidden;" cx=-669.66927204 cy=118.08076103999998 r=25 />
+                        <circle id="ec614" class='electron' style="visibility:hidden;" cx=669.66927204 cy=118.08076103999998 r=25 />
+                        <circle id="ec615" class='electron' style="visibility:hidden;" cx=-232.5736 cy=-638.9909815999999 r=25 />
+                        <circle id="ec616" class='electron' style="visibility:hidden;" cx=232.5736 cy=-638.9909815999999 r=25 />
+                        <circle id="ec617" class='electron' style="visibility:hidden;" cx=-232.5736 cy=638.9909815999999 r=25 />
+                        <circle id="ec618" class='electron' style="visibility:hidden;" cx=232.5736 cy=638.9909815999999 r=25 />
+                    </g>
+                    <g id="seven" style="visibility:hidden;" class='seven' fill='currentColor'>
+                        <circle r=770 fill='none' stroke='currentColor' stroke-width=8 />
+                        <circle id="ec71" class='electron' style="visibility:hidden;" cx=0 cy=-770 r=25 />
+                        <circle id="ec72" class='electron' style="visibility:hidden;" cx=0 cy=770 r=25 />
+                        <circle id="ec73" class='electron' style="visibility:hidden;" cx=-770 cy=0 r=25 />
+                        <circle id="ec74" class='electron' style="visibility:hidden;" cx=770 cy=0 r=25 />
+                        <circle id="ec75" class='electron' style="visibility:hidden;" cx=-544.467 cy=-544.467 r=25 />
+                        <circle id="ec76" class='electron' style="visibility:hidden;" cx=544.467 cy=-544.467 r=25 />
+                        <circle id="ec77" class='electron' style="visibility:hidden;" cx=-544.467 cy=544.467 r=25 />
+                        <circle id="ec78" class='electron' style="visibility:hidden;" cx=544.467 cy=544.467 r=25 />
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div style="color: azure; margin-left: 50%; margin-top:15px; margin-bottom:20px; border:0.5px solid rgb(70,73,90); padding:2%">
+            <h4 id="esym"><strong>ELEMENT SYMBOL</strong></h4>
+            <div id="est" style="text-align:center"></div>
+        </div>
+
+
+
+        <div style="color: azure; margin-left: 50%; margin-bottom:20px; border:0.5px solid rgb(70,73,90); padding:2%">
+            <div>
+                <div style="font-size:35px; text-align:center; padding:1%; padding-left:5%">
+                    <h4 id="grp">Group</h4>
+                    <h4 id="prd">Period</h4>
+                    <h4 id="blk">Block</h4>
+                </div>
+            </div>
+        </div>
+
+        <div style="color: azure; margin-left: 50%; margin-bottom: 10px; border: 0.5px solid rgb(70,73,90); padding: 2%">
+            <div style="text-align:center">
+                <h4>Protons</h4>
+                <div id="p"></div>
+                <h4>Electrons</h4>
+                <div id="e"></div>
+                <h4>Neutrons</h4>
+                <div id="n"></div>
+            </div>
+        </div>
+
+        <div style="color: azure; float: left; width: 48%; margin-bottom: 10px; border: 0.5px solid rgb(70,73,90); padding: 2%">
+            <h4 style="padding-bottom:5px;"><strong>General Properties</strong></h4>
+            <div class='grid'>
+                <h5>Atomic Number</h5>
+                <div id="ano" style="margin-left:25%">1</div>
+                <h5>Atomic Weight</h5>
+                <div id="aw" style="margin-left:25%">1.00794</div>
+                <h5>Mass Number</h5>
+                <div id="mn" style="margin-left:25%">1</div>
+                <h5>Category</h5>
+                <div id="cty" style="margin-left:25%">Other nonmetals</div>
+                <h5>Color</h5>
+                <div id="clr" style="margin-left:25%">Colourless</div>
+                <h5>Radioactive</h5>
+                <div id="rx" style="margin-left:25%">No</div>
+            </div>
+        </div>
+
+        <div style="margin-top:12px; margin-left:50%; margin-bottom:10px; border:0.5px solid rgb(70,73,90); padding:2%">
+            <h4 id="ehist"><strong>History</strong></h4>
+            <div id="ehct" style="margin-top:3%; line-height:normal"></div>
+        </div>
+
+        </div>
+</body>
+
+<script src="{% static 'app/scripts/eledtes.js' %}"></script>
+
+</html>
+
+{% endblock %}
